@@ -1,0 +1,57 @@
+.titulo
+    font-size: 1.2rem
+    text-align: center
+    
+.contenedor-targetas
+    display: grid
+    grid-template-columns: 1fr
+    margin: 0px 30px
+    .targeta
+        display: grid
+        grid-template-rows: 1fr 0fr 0fr 50px 80px
+        background-color: $base
+        text-align: center
+        box-shadow: 1px 1px 3px $text
+        margin: 10px
+        .img-targeta
+            width: 100%
+        .precio
+            display: grid
+            grid-template-columns: 1fr 1fr
+            align-content: center 
+            .precioDescuento
+                font-size: 1.2rem
+        .btn
+            margin-top: 25px
+            .btnAgregar
+                background-color: $btn
+                width: 90%
+                height: 40px
+                color: $base
+                font-size: .7rem
+                font-weight: bold
+                border: none
+                border-radius: 5px
+        
+@media screen and (min-width:575px)
+    .contenedor-targetas
+        display: grid
+        grid-template-columns: 1fr 1fr
+
+@media screen and (min-width:768px)
+    .contenedor-targetas
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+
+@media screen and (min-width:992px)
+    .contenedor-targetas
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        padding: 0px 90px 0px 90px   
+
+
+        
+
+       
+
+    

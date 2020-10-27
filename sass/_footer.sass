@@ -1,0 +1,35 @@
+.footer
+    display: grid
+    grid-template-rows: 70px 1fr
+    color: $base
+    background-color: $base
+    background: -webkit-linear-gradient(to right, $purple, $red)//Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right, $purple, $red) //W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+    color: $base
+    .tituloFooter
+        margin-left: 6%
+        font-weight: 100
+        letter-spacing: 1pt 
+    .links
+        display: grid
+       
+        justify-content: center
+        align-content: center
+        a
+            text-decoration: none
+            color: $base
+            margin: 20px
+        span
+            margin-right: 5px
+            color: $royal
+            font-size: 1.5rem      
+
+@media screen and (min-width:575px)
+    .links
+        display: grid
+        grid-template-rows: repeat(2, 50px) 
+        grid-template-columns: 1fr 1fr 1fr
+        justify-content: center
+        margin: auto
+        font-size: 1.5rem
+           

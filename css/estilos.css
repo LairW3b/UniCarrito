@@ -1,0 +1,211 @@
+.contenedor-encabezado {
+  display: grid;
+  grid-template-rows: 80px 40px;
+  color: #706f6f;
+  text-align: center; }
+  .contenedor-encabezado h1 {
+    font-weight: bold; }
+  .contenedor-encabezado h1::first-letter {
+    color: #d82f2f;
+    font-family: "Sansita Swashed";
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px #513779; }
+  .contenedor-encabezado .contenedor-carrito {
+    list-style: none;
+    z-index: 20; }
+    .contenedor-encabezado .contenedor-carrito .icono-carrito {
+      font-size: 2rem; }
+      .contenedor-encabezado .contenedor-carrito .icono-carrito:hover {
+        color: #d82f2f; }
+    .contenedor-encabezado .contenedor-carrito .carrito {
+      background-color: white;
+      display: none; }
+      .contenedor-encabezado .contenedor-carrito .carrito .lista-carrito {
+        margin-top: 8px;
+        color: black;
+        width: 90%; }
+      .contenedor-encabezado .contenedor-carrito .carrito hr {
+        width: 90%;
+        color: #706f6f; }
+      .contenedor-encabezado .contenedor-carrito .carrito .btn-vaciar {
+        width: 70%;
+        height: 40px;
+        margin: 20px;
+        background-color: white;
+        border: 1px solid #706f6f;
+        color: #706f6f;
+        border-radius: 2px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.7rem; }
+        .contenedor-encabezado .contenedor-carrito .carrito .btn-vaciar:hover {
+          border-color: black;
+          color: black; }
+
+.cerrar {
+  background-color: #d82f2f;
+  border-radius: 100%;
+  margin: 10px;
+  padding: 5px;
+  color: #f3f3f3;
+  text-decoration: none; }
+
+.busqueda {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .busqueda .titulos-info {
+    display: grid;
+    grid-template-rows: 1fr 0fr 1fr;
+    color: #f3f3f3;
+    margin-left: 5%; }
+    .busqueda .titulos-info h2 {
+      margin-top: 70px;
+      font-weight: 200;
+      font-size: 1.8rem; }
+  .busqueda .inputBusqueda {
+    width: 260px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #7654b4; }
+  .busqueda .submit-buscador {
+    background-image: url(../img/lupa.png);
+    width: 50px;
+    height: 40px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border-color: #7654b4; }
+
+@media screen and (min-width: 575px) {
+  .contenedor-encabezado {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; }
+    .contenedor-encabezado .icono-carrito {
+      margin-top: 33px; }
+    .contenedor-encabezado .carrito {
+      position: absolute;
+      top: 98px;
+      left: 10%;
+      width: 80%; } }
+.titulo {
+  font-size: 1.2rem;
+  text-align: center; }
+
+.contenedor-targetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0px 30px; }
+  .contenedor-targetas .targeta {
+    display: grid;
+    grid-template-rows: 1fr 0fr 0fr 50px 80px;
+    background-color: #f3f3f3;
+    text-align: center;
+    box-shadow: 1px 1px 3px #706f6f;
+    margin: 10px; }
+    .contenedor-targetas .targeta .img-targeta {
+      width: 100%; }
+    .contenedor-targetas .targeta .precio {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-content: center; }
+      .contenedor-targetas .targeta .precio .precioDescuento {
+        font-size: 1.2rem; }
+    .contenedor-targetas .targeta .btn {
+      margin-top: 25px; }
+      .contenedor-targetas .targeta .btn .btnAgregar {
+        background-color: #1EAEDB;
+        width: 90%;
+        height: 40px;
+        color: #f3f3f3;
+        font-size: 0.7rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px; }
+
+@media screen and (min-width: 575px) {
+  .contenedor-targetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
+@media screen and (min-width: 768px) {
+  .contenedor-targetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; } }
+@media screen and (min-width: 992px) {
+  .contenedor-targetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 90px 0px 90px; } }
+.footer {
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  color: #f3f3f3;
+  background-color: #f3f3f3;
+  background: -webkit-linear-gradient(to right, #967ecb, #d82f2f);
+  background: linear-gradient(to right, #967ecb, #d82f2f);
+  color: #f3f3f3; }
+  .footer .tituloFooter {
+    margin-left: 6%;
+    font-weight: 100;
+    letter-spacing: 1pt; }
+  .footer .links {
+    display: grid;
+    justify-content: center;
+    align-content: center; }
+    .footer .links a {
+      text-decoration: none;
+      color: #f3f3f3;
+      margin: 20px; }
+    .footer .links span {
+      margin-right: 5px;
+      color: #513779;
+      font-size: 1.5rem; }
+
+@media screen and (min-width: 575px) {
+  .links {
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.5rem; } }
+.banner-Informativo {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #967ecb;
+  background: -webkit-linear-gradient(to right, #967ecb, #d82f2f);
+  background: linear-gradient(to right, #967ecb, #d82f2f); }
+  .banner-Informativo .elemento-info {
+    text-align: center;
+    color: #f3f3f3; }
+    .banner-Informativo .elemento-info .icon-info {
+      font-size: 2rem;
+      margin-top: 15px; }
+
+@media screen and (min-width: 575px) {
+  .elemento-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr; }
+    .elemento-info .icon-info {
+      align-self: center;
+      margin-left: 70%; }
+    .elemento-info .info {
+      font-size: 1.2rem; } }
+@media screen and (min-width: 768px) {
+  .elemento-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr; } }
+@media screen and (min-width: 768px) {
+  .banner-Informativo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr); }
+    .banner-Informativo .elemento-info {
+      display: grid;
+      grid-template-columns: 1fr 3fr; }
+      .banner-Informativo .elemento-info .icon-info {
+        margin: 0%; }
+      .banner-Informativo .elemento-info .info {
+        font-size: 1rem; } }
+
+/*# sourceMappingURL=estilos.css.map */

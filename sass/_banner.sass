@@ -1,0 +1,42 @@
+.banner-Informativo
+    display: grid
+    grid-template-rows: 1fr 1fr 1fr
+    background-color: $purple
+    background: -webkit-linear-gradient(to right, $purple, $red)//Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right, $purple, $red) //W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+
+    .elemento-info
+        text-align: center
+        color: $base
+        .icon-info
+            font-size: 2rem
+            margin-top: 15px
+        
+
+@media screen and (min-width:575px)
+    .elemento-info
+        display: grid
+        grid-template-columns: 1fr 3fr
+        .icon-info
+            align-self: center
+            margin-left: 70%
+        .info
+            font-size: 1.2rem
+
+@media screen and (min-width:768px)
+    .elemento-info
+        display: grid
+        grid-template-columns: 1fr 2fr
+
+@media screen and (min-width:768px)
+    .banner-Informativo
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: repeat(1, 1fr)
+        .elemento-info
+            display: grid
+            grid-template-columns: 1fr 3fr
+            .icon-info
+                margin: 0%
+            .info
+                font-size: 1rem

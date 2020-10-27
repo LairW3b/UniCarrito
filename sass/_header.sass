@@ -1,0 +1,104 @@
+@import '_variables.sass'
+
+.contenedor-encabezado
+    display: grid
+    grid-template-rows:  80px 40px
+    //background-color: $purple
+    color: $text 
+    text-align: center
+    h1
+        font-weight: bold
+    h1::first-letter
+        color: $red
+        font-family: 'Sansita Swashed'
+        font-size: 3rem
+        text-shadow: 2px 2px 2px $royal
+    
+    //ESTILOS CARRITO
+    .contenedor-carrito
+        list-style: none
+        z-index: 20
+        .icono-carrito
+            font-size: 2rem
+            &:hover
+                color: $red
+        .carrito
+            background-color: white
+            display: none
+            .lista-carrito
+                margin-top: 8px 
+                color: black
+                width: 90%
+            hr 
+                width: 90%
+                color: $text
+            .btn-vaciar                
+                width: 70%
+                height: 40px
+                margin: 20px
+                background-color: white
+                border: 1px solid $text
+                color: $text
+                border-radius: 2px
+                text-transform: uppercase
+                font-weight: bold
+                font-size: .7rem
+                &:hover
+                    border-color: black
+                    color: black
+        
+.cerrar
+    background-color: $red
+    border-radius: 100%
+    margin: 10px
+    padding: 5px
+    color: $base
+    text-decoration: none
+       
+.busqueda
+    background-image: url(../img/hero.jpg)
+    background-repeat: no-repeat 
+    background-size: cover
+    .titulos-info
+        display: grid
+        grid-template-rows: 1fr 0fr 1fr
+        color: $base
+        margin-left: 5%
+        h2
+            margin-top: 70px
+            font-weight: 200
+            font-size: 1.8rem
+    .inputBusqueda
+        width: 260px
+        height: 40px
+        border-radius: 5px
+        border-color: $cool
+    
+    .submit-buscador
+        background-image: url(../img/lupa.png)
+        width: 50px
+        height: 40px
+        background-position: right center
+        background-repeat: no-repeat
+        border-radius: 5px
+        border-color: $cool
+
+
+@media screen and (min-width:575px)
+    .contenedor-encabezado
+        grid-template-columns: 1fr 1fr
+        grid-template-rows:  1fr
+        .icono-carrito
+            margin-top: 33px
+        .carrito
+            position: absolute
+            top: 98px
+            left: 10%
+            width: 80%
+
+
+            
+
+            
+        
+            
